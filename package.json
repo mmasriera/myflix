@@ -4,7 +4,10 @@
   "description": "movies i've watched &amp; watchlist",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server",
+    "clear": "rm build/bundle.js"
   },
   "repository": {
     "type": "git",

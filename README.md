@@ -1,7 +1,7 @@
 # myflix-page
 movies i've watched &amp; watchlist
 
-lists at [page](http://mmasriera.github.com/myflix)
+[page](http://mmasriera.github.com/myflix)
 
 1. page
  - [ ] react + babel
