@@ -4,8 +4,8 @@ movies i've watched &amp; watchlist
 [page](http://mmasriera.github.com/myflix)
 
 1. page
- - [ ] react + babel
- - [ ] webpack
+ - [x] react + babel
+ - [x] webpack
  - [ ] redux
  - [ ] stye
 2. scripts
