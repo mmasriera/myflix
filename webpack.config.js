@@ -1,8 +1,7 @@
-const path = require( 'path' ),
-      webpack = require( 'webpack' ),
-      paths = {
-        build : path.join( __dirname, 'build' ),
-        public : path.join( __dirname, 'public' )
+const webpack = require( 'webpack' ),
+      paths   = {
+        build  : `${__dirname}/build`,
+        public : `${__dirname}/public`
       };
 
 module.exports = {
@@ -16,9 +15,9 @@ module.exports = {
     module : {
         loaders : [
             {
+                loader : 'babel',
                 test : /\.jsx?$/,
-                exclude : /node_modules/,
-                loader : 'babel'
+                exclude : /node_modules/
             }
         ]
     },
