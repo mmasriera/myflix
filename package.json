@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "build-prod" : "webpack -p",
     "start": "webpack-dev-server",
     "clear": "rm build/bundle.js"
   },
