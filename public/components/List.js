@@ -1,11 +1,13 @@
-const React = require( 'react' );
+
+const React = require( 'react' ),
+      movies = require( '../../lists/list.js' );
 
 module.exports =  React.createClass({
 
     render() {
 
         return(
-        	<div>List!</div>
+        	<div>{ JSON.stringify( movies ) }</div>
     	);
     }
 });
