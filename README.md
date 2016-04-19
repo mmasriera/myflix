@@ -10,5 +10,5 @@ movies i've watched &amp; watchlist
  - [ ] stye
 2. scripts
  1. list --> json
-   - [ ] go lang : worst scripting language ever TODO: use node or py
+   - [x] go lang : worst scripting language ever TODO: use node or py
     - [ ] save images
