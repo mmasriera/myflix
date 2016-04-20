@@ -1,5 +1,8 @@
-# myflix-page
+# myflix
+
 movies i've watched &amp; watchlist
+
+### under construction!!
 
 [page](http://mmasriera.github.com/myflix)
 
