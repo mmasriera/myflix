@@ -13,7 +13,7 @@ import(
 type Movie struct {
     Title string
 	Year string
-	/*Rated string
+	Rated string
 	Released string
 	Runtime string
 	Genre string
@@ -30,7 +30,7 @@ type Movie struct {
 	imdbVotes string
 	imdbID string
 	Type string
-	Response string*/
+	Response string
 }
 
 // given a movie title, returns am omdb-paramerter string

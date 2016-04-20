@@ -1,3 +1,4 @@
+
 const webpack = require( 'webpack' ),
       paths   = {
         build  : `${__dirname}/build`,

@@ -1,6 +1,6 @@
 const React    = require( 'react' ),
       ReactDOM = require( 'react-dom' ),
-      List     = require( './components/List' );
+      List     = require( './components/List/List' );
 
 const App = React.createClass({
 
@@ -8,7 +8,6 @@ const App = React.createClass({
 
         return(
             <div>
-            	<h3>it works</h3>
             	<List />
         	</div>
         );
