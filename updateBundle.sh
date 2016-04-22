@@ -1,0 +1,1 @@
+mv build/bundle.js .
