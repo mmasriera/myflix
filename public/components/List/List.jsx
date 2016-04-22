@@ -1,7 +1,7 @@
 
-const React = require( 'react' ),
+const React     = require( 'react' ),
       movieList = require( '../../../lists/list.js' ),
-      Movie = require( '../Movie/Movie' );
+      Movie     = require( '../Movie/Movie.jsx' );
 
 module.exports =  React.createClass({
 

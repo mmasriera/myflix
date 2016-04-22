@@ -1,8 +1,8 @@
 
 const webpack = require( 'webpack' ),
       paths   = {
-        build  : `${__dirname}/build`,
-        public : `${__dirname}/public`
+        build  : `${ __dirname }/build`,
+        public : `${ __dirname }/public`
       };
 
 module.exports = {
