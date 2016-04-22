@@ -16,9 +16,14 @@ module.exports = {
     module : {
         loaders : [
             {
-                loader : 'babel',
-                test : /\.jsx?$/,
+                loader  : 'babel',
+                test    : /\.jsx?$/,
                 exclude : /node_modules/
+            },
+            {
+                loader : 'style!css!less',
+                test   : /\.less$/
+                //loader : "style!css!less"
             }
         ]
     },

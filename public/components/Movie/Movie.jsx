@@ -3,10 +3,11 @@ const React = require( 'react' );
 module.exports = ( props ) => {
 
     return(
-        <div>
+        <div className="movie">
             <h3>{ props.Title }</h3>
             <p>{ props.Released }</p>
-            <img src={ props.Poster } />
+            <p>{ props.Plot }</p>
+            {/*<img src={ props.Poster } />*/}
         </div>
     );
 }

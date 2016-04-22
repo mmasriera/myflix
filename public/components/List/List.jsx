@@ -10,7 +10,7 @@ module.exports =  React.createClass({
         var movies = movieList.map( ( movie, idx ) => <Movie { ...movie } key={ `mov-${idx}` } /> );
 
         return(
-        	<div>{ movies }</div>
+        	<div className="movies">{ movies }</div>
     	);
     }
 });

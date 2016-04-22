@@ -1,3 +1,6 @@
+
+require( './style.less' );
+
 const React    = require( 'react' ),
       ReactDOM = require( 'react-dom' ),
       List     = require( './components/List/List.jsx' );
