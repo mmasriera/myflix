@@ -7,7 +7,7 @@ module.exports =  React.createClass({
 
     render() {
 
-        var movies = movieList.map( ( movie, idx ) => <Movie data={ movie } key={ `mov-${idx}` } /> );
+        var movies = movieList.map( ( movie, idx ) => <Movie { ...movie } key={ `mov-${idx}` } /> );
 
         return(
         	<div>{ movies }</div>

@@ -11,6 +11,8 @@ movies i've watched &amp; watchlist
  - [x] webpack
  - [ ] redux
  - [ ] stye
+ - [ ] linter
+ - [ ] test
 - scripts
  1. list --> json
    - [x] go lang : not very good for scripting TODO: use node or py
@@ -19,7 +21,7 @@ movies i've watched &amp; watchlist
 ===
 ```bash
   # install
-  npm i 
-  # build 
+  npm i
+  # build
   npm run build
 ```

@@ -1,11 +1,12 @@
 const React = require( 'react' );
 
-module.exports =  React.createClass({
+module.exports = ( props ) => {
 
-    render() {
-
-        return(
-        	<div>{ JSON.stringify( this.props.data ) }</div>
-    	);
-    }
-});
+    return(
+        <div>
+            <h3>{ props.Title }</h3>
+            <p>{ props.Released }</p>
+            <img src={ props.Poster } />
+        </div>
+    );
+}
