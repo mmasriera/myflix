@@ -23,6 +23,10 @@ module.exports = {
             {
                 loader : 'style!css!less',
                 test   : /\.less$/
+            },
+            {
+                loader : 'url-loader',
+                test : /\.png$/
             }
         ]
     },

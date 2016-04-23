@@ -4,9 +4,27 @@
     width : 19%;
     min-height : 100%;
     position : relative;
-
     float : left;
-    background-color : @teal;
-    color : @light-grey;
 
+    border-right : 5px solid @teal;
+    padding : 30px 25px;
+    color : @teal;
+
+    #page-info {
+
+        text-align : left;
+        padding : 30px 0;
+        border-bottom : 5px solid @teal;
+
+        a > img {
+                width : 40px;
+                height : 40px;
+                border-radius : 25px;
+        }
+    }
+
+    #movie-info {
+        padding-top : 30px;
+        text-align : right;
+    }
 }

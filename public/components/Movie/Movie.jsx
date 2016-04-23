@@ -6,7 +6,7 @@ module.exports = ( props ) => {
 
             <div className="movie">
                 <img src={ props.Poster }/>
-                <p className="title">{ props.Title }</p>
+                <p className="title">{ props.Title.substr( 0, 30 ) }</p>
             </div>
 
     );
