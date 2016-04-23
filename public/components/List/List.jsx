@@ -5,9 +5,14 @@ const React     = require( 'react' ),
 
 module.exports =  React.createClass({
 
+    selectMovie( movieData ) {
+
+        this.props.updateMovie( movieData );
+    },
+
     render() {
 
-        var movies = movieList.map( ( movie, idx ) => <Movie { ...movie } key={ `mov-${idx}` } /> );
+        var movies = movieList.map( ( movie, idx ) => <Movie movie={ movie } key={ `mov-${idx}` } select={ this.selectMovie } /> );
 
         return(
         	<div id="movies">{ movies }</div>

@@ -1,13 +1,9 @@
-const React = require( 'react' );
 
-module.exports = ( props ) => {
+const React = require( 'react' ); // do not remove!
 
-    return(
+module.exports = ( props ) =>
 
-            <div className="movie">
-                <img src={ props.Poster }/>
-                <p className="title">{ props.Title.substr( 0, 30 ) }</p>
-            </div>
-
-    );
-}
+    <div className="movie" onClick={ props.select.bind( null, props.movie ) }>
+        <img src={ props.movie.Poster }/>
+        <p className="title">{ props.movie.Title.substr( 0, 30 ) }</p>
+    </div>;
