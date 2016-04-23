@@ -43,6 +43,8 @@ func omdbFormatTitle( title string ) string {
 // given the title of a film, returns a json string with its info
 func title2jsonString( title string ) string {
 
+	fmt.Println( title )
+
 	var formattedTitle string = omdbFormatTitle( title )
 
 	resp, err1 := http.Get( "http://www.omdbapi.com/?t=" + formattedTitle + "&y=&plot=short&r=json" )
