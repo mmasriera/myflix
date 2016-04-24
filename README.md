@@ -7,6 +7,14 @@ movies i've watched &amp; watchlist
 
 result at [page](http://mmasriera.github.com/myflix)
 
+===
+```bash
+  # install
+  npm i
+  # build
+  npm run build
+```
+
 - front
  - webpack
     - [x] babel
@@ -20,13 +28,12 @@ result at [page](http://mmasriera.github.com/myflix)
     - ~~redux~~
     - ~~bulma.io~~
 - scripts
- 1. list --> json
-   - [x] go lang : not very good for scripting TODO: use node or py
+ - list --> json
+    - [x] go lang : not very good for scripting TODO: use node or py
 
-===
-```bash
-  # install
-  npm i
-  # build
-  npm run build
-```
+#####TODO
+- watchlist
+- save images
+- style
+- responsive (+lib)
+- "deploy" script

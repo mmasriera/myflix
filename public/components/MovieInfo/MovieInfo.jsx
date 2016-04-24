@@ -3,16 +3,28 @@ const React  = require( 'react' );
 
 module.exports = React.createClass({
 
-
     render() {
 
-        var movie = this.props;
+        const movieInfo = this.props.Title ?
+            <div>
+                <h2>{ this.props.Title }</h2>
+                <p>{ `${ this.props.Year } ${ this.props.Country.split( ',' )[ 0 ] }` }</p>
+                <p>{ `${ this.props.Runtime } - ${ this.props.Genre }` }</p>
+                <p>{ `directed by: ${ this.props.Director }` }</p>
+                <p>{ `written by: ${ this.props.Writer }` }</p>
+                <p>{ `cast: ${ this.props.Actors }` }</p>
+                <p className="plot">{ `"${ this.props.Plot }"` }</p>
+                <p>{ `Awards: ${ this.props.Awards }` }</p>
+                <p><a href={ `http://www.imdb.com/title/${ this.props.ImdbID }` }>imdb</a></p>
+            </div>
+            :
+            <h4>Click a movie</h4>;
+
         console.log( 'info : ', this.props );
 
         return(
-
             <div id="movie-info">
-                <h3>{ movie.Title || `click a movie` }</h3>
+                { movieInfo }
             </div>
         );
     }

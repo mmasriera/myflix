@@ -25,10 +25,10 @@ type Movie struct {
 	Country 	string
 	Awards 		string
 	Poster  	string
-	Metascore 	string
 	imdbRating 	string
-	imdbVotes 	string
-	imdbID 		string
+	Metascore 	string
+	ImdbVotes 	string
+	ImdbID 		string
 	Type 		string
 	Response 	string
 }
@@ -48,7 +48,6 @@ func title2jsonString( title string ) string {
 	var formattedTitle string = omdbFormatTitle( title )
 
 	resp, err1 := http.Get( "http://www.omdbapi.com/?t=" + formattedTitle + "&y=&plot=short&r=json" )
-	defer resp.Body.Close()
 
 	if err1 != nil {
 
@@ -56,6 +55,7 @@ func title2jsonString( title string ) string {
 	}
 
     jsonData, err2 := ioutil.ReadAll( resp.Body ) // read json http response
+	defer resp.Body.Close()
 
 	if err2 != nil {
 
