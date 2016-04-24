@@ -33,7 +33,7 @@ result at [page](http://mmasriera.github.com/myflix)
 
 #####TODO
 - watchlist
-- save images
+- save images : [imdb poster api issue](http://stackoverflow.com/questions/28676608/403-error-for-loading-image-from-http-and-not-https/28676680#28676680)
 - style
 - responsive (+lib)
 - "deploy" script
