@@ -20,8 +20,6 @@ module.exports = React.createClass({
             :
             <h4>Click a movie</h4>;
 
-        console.log( 'info : ', this.props );
-
         return(
             <div id="movie-info">
                 { movieInfo }
