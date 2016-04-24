@@ -3,20 +3,25 @@
 movies i've watched &amp; watchlist
 
 ### under construction!!
+5min/day project
 
-[page](http://mmasriera.github.com/myflix)
+result at [page](http://mmasriera.github.com/myflix)
 
-- page
- - [x] react + babel
- - [x] webpack
- - [ ] redux
- - [ ] stye
- - [ ] linter
- - [ ] test
+- front
+ - webpack
+    - [x] babel
+    - [x] compile react
+    - [x] less
+    - [ ] eslint
+    - [ ] run tests
+ - libs/frameworks
+    - react 15.0.1
+    - less
+    - ~~redux~~
+    - ~~bulma.io~~
 - scripts
  1. list --> json
    - [x] go lang : not very good for scripting TODO: use node or py
-    - [ ] save images
 
 ===
 ```bash
