@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "list2json": "(cd lists && exec go run list2json.go)",
+    "list2json": "rm -rf public/images/posters && mkdir public/images/posters && (cd lists && exec go run list2json.go)",
     "build": "webpack",
     "build-prod": "webpack -p",
     "start": "webpack-dev-server",

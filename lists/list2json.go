@@ -33,39 +33,40 @@ type Movie struct {
 	Response 	string
 }
 
-/*func getData( url string ) []byte {
+// makes an http.get request, and returns the response
+func getData( url string ) []byte {
 
-	var result
+	resp, errGet := http.Get( url )
 
-	return
-}*/
+	if errGet != nil {
+
+		panic( errGet )
+	}
+
+    bodyData, errBody := ioutil.ReadAll( resp.Body )
+	defer resp.Body.Close()
+
+	if errBody != nil {
+
+    	panic( errBody )
+    }
+
+	return bodyData
+}
 
 // given the title of a film, returns a json string with its info
 func title2jsonString( title string ) string {
 
-	fmt.Println( title )
-
 	var formattedTitle string = strings.Replace( title, " ", "+", -1 )//omdbFormatTitle( title )
-	resp, err1 := http.Get( "http://www.omdbapi.com/?t=" + formattedTitle + "&y=&plot=short&r=json" )
-
-	if err1 != nil {
-
-		panic( err1 )
-	}
-
-    jsonData, err2 := ioutil.ReadAll( resp.Body ) // read json http response
-	defer resp.Body.Close()
-
-	if err2 != nil {
-
-    	panic( err2 )
-    }
+	var jsonData []byte = getData( "http://www.omdbapi.com/?t=" + formattedTitle + "&y=&plot=short&r=json" )
 
 	var movie Movie
 	json.Unmarshal( jsonData, &movie ) // struct
 
 	// do sth with movie ...
 	// save images
+
+	var image []byte = getData( strings.Replace( movie.Poster, "SX300", "SX125", 1 ) ) // width 125px (original: 300px)
 
 	/*var posterURL string = strings.Replace( movie.Poster, "SX300", "SX125", 1 ) // width 125px (original: 300px)
 	fmt.Println( posterURL )
@@ -76,6 +77,13 @@ func title2jsonString( title string ) string {
 
 		panic( errImage )
 	}*/
+
+	errImg := ioutil.WriteFile( "../public/images/posters/" + title + ".jpg" , image, 0644 )
+
+	if errImg != nil {
+
+		panic( errImg )
+	}
 
 	///////
 
@@ -105,6 +113,7 @@ func main() {
 	for input.Scan() { // line by line
 
 		var title string = input.Text()
+		fmt.Println( title )
 		movies = append( movies, title2jsonString( title ) )
 	}
 
