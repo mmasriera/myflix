@@ -33,20 +33,19 @@ type Movie struct {
 	Response 	string
 }
 
-// given a movie title, returns am omdb-paramerter string
-func omdbFormatTitle( title string ) string {
+/*func getData( url string ) []byte {
 
-	words := strings.Split( title, " " )
-	return strings.Join( words, "+" )
-}
+	var result
+
+	return
+}*/
 
 // given the title of a film, returns a json string with its info
 func title2jsonString( title string ) string {
 
 	fmt.Println( title )
 
-	var formattedTitle string = omdbFormatTitle( title )
-
+	var formattedTitle string = strings.Replace( title, " ", "+", -1 )//omdbFormatTitle( title )
 	resp, err1 := http.Get( "http://www.omdbapi.com/?t=" + formattedTitle + "&y=&plot=short&r=json" )
 
 	if err1 != nil {
@@ -63,10 +62,22 @@ func title2jsonString( title string ) string {
     }
 
 	var movie Movie
-	json.Unmarshal( []byte( jsonData ), &movie ) // struct
+	json.Unmarshal( jsonData, &movie ) // struct
 
 	// do sth with movie ...
 	// save images
+
+	/*var posterURL string = strings.Replace( movie.Poster, "SX300", "SX125", 1 ) // width 125px (original: 300px)
+	fmt.Println( posterURL )
+
+	image, errImage := http.Get( posterURL )
+
+	if errImage != nil {
+
+		panic( errImage )
+	}*/
+
+	///////
 
 	jsonEncoded, err3 := json.Marshal( movie ) // to string
 
