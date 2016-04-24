@@ -63,9 +63,12 @@ func title2jsonString( title string ) string {
     }
 
 	var movie Movie
-	json.Unmarshal( []byte( jsonData ), &movie )
-	// do sth with movie
-	jsonEncoded, err3 := json.Marshal( movie )
+	json.Unmarshal( []byte( jsonData ), &movie ) // struct
+
+	// do sth with movie ...
+	// save images
+
+	jsonEncoded, err3 := json.Marshal( movie ) // to string
 
 	if err3 != nil {
 
@@ -77,29 +80,29 @@ func title2jsonString( title string ) string {
 
 func main() {
 
-	var movies []string
-
 	file, err1 := os.Open( "titles.txt" )
 	defer file.Close()
 
 	if err1 != nil {
 
-		fmt.Println( err1 )
+		panic( err1 )
 	}
 
+	var movies []string
 	input := bufio.NewScanner( file )
 
-	for input.Scan() {
+	for input.Scan() { // line by line
 
 		var title string = input.Text()
 		movies = append( movies, title2jsonString( title ) )
 	}
 
+	// overwrite file
 	moviesData := []byte( "module.exports = [" + strings.Join( movies, "," ) + "];" )
 	err2 := ioutil.WriteFile( "list.js", moviesData, 0644 )
 
 	if err2 != nil {
 
-		fmt.Println( err2 )
+		panic( err2 )
 	}
 }
