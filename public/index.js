@@ -27,8 +27,14 @@ const App = React.createClass({
                 <div id="sidebar">
                     <div id="page-info">
                         <h2>{ `movies I've seen` }</h2>
+                        <hr></hr>
                     </div>
+
                     <MovieInfo { ...this.state.movie } />
+
+                    <a id="src" href="https://github.com/mmasriera/myflix">
+                        <img src={ ghLogo } />
+                    </a>
                 </div>
 
             	<List updateMovie={ this.updateMovie } />
