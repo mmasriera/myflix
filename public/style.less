@@ -4,19 +4,21 @@
 @import "components/Movie/Movie.less";
 
 //colors
-@dark-teal : #00796B;
 @teal : #26A69A;
 @light-teal : #B2DFDB;
-@grey : #727272;
-@light-grey : #FAFAFA;
-@light-grey2 : #EEEDED;
-
+@light-grey : #D3D3D3;
 
 body {
 
-    font-family : monospace;
-    background-color: @light-grey2;
+    font-family : menlo, monaco, monospace;
+    background-color: #FFF;
     margin : 0;
+
+    h2 {
+        margin-top : 0;
+        font-weight : 500;
+        font-size : 20px;
+    }
 
     #sidebar {
 
@@ -25,21 +27,16 @@ body {
         position : fixed;
         float : left;
 
-        border-right : 5px solid @teal;
         padding : 30px 25px;
-        color : @teal;
+
+        text-align : center;
+        background-color : @teal;
+        color : white;
 
         #page-info {
 
-            text-align : left;
             padding : 30px 0;
-            border-bottom : 5px solid @teal;
-
-            a > img {
-                    width : 40px;
-                    height : 40px;
-                    border-radius : 25px;
-            }
+            border-bottom : 5px solid white;
         }
     }
 }

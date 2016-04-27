@@ -18,7 +18,7 @@ module.exports = React.createClass({
                 <p><a href={ `http://www.imdb.com/title/${ this.props.ImdbID }` }>imdb</a></p>
             </div>
             :
-            <h4>Click a movie</h4>;
+            <h2>Click a movie</h2>;
 
         return(
             <div id="movie-info">

@@ -25,18 +25,14 @@ const App = React.createClass({
             <div id="container">
 
                 <div id="sidebar">
-
                     <div id="page-info">
-                        <h2>{ `Movies I've seen` }</h2>
-                        <a href="https://github.com/mmasriera/myflix">
-                            <img src={ ghLogo } />
-                        </a>
+                        <h2>{ `movies I've seen` }</h2>
                     </div>
-
                     <MovieInfo { ...this.state.movie } />
                 </div>
 
             	<List updateMovie={ this.updateMovie } />
+
         	</div>
         );
     }
