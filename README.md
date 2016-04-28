@@ -29,6 +29,7 @@ It won't scale.
  - libs/frameworks
     - [x] react 15.0.1
     - [x] less
+    - [ ] react router ?
     - [x] ~~redux~~
     - [x] ~~bulma.io~~
  - style
@@ -39,4 +40,4 @@ It won't scale.
     - [x] download images bc:[imdb poster api issue](http://stackoverflow.com/questions/28676608/403-error-for-loading-image-from-http-and-not-https/28676680#28676680)
     - [ ] "deploy"
 - other
-  - watchlist
+  - watchlist --> file + script + front
