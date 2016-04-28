@@ -1,3 +1,11 @@
+/*
+'npm run list2json'
+downloads info from every movie of titles.txt
+result:
+	 list.js : array, each element contains movie info
+	 public/images/posters : 1 image / movie
+*/
+
 package main
 
 import(
@@ -25,7 +33,7 @@ type Movie struct {
 	Country 	string
 	Awards 		string
 	Poster  	string
-	imdbRating 	string
+	ImdbRating 	string
 	Metascore 	string
 	ImdbVotes 	string
 	ImdbID 		string
@@ -93,7 +101,6 @@ func main() {
 
 	var movies []string
 	input := bufio.NewScanner( file )
-
 	for input.Scan() { // line by line
 
 		var title string = input.Text()
