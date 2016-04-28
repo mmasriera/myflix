@@ -1,1 +1,2 @@
-mv build/bundle.js bundle.js
+cp build/bundle.js bundle.js
+cp -r build/posters posters/
