@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "list2json": "rm -rf public/images/posters && mkdir public/images/posters && (cd lists && sort -f -o titles.txt titles.txt && exec go run list2json.go)",
+    "list2json": "rm -rf build/posters && mkdir build/posters && (cd lists && sort -f -o titles.txt titles.txt && exec go run list2json.go)",
     "build": "webpack",
     "build-prod": "webpack -p",
     "start": "webpack-dev-server",
-    "clear": "rm build/bundle.js"
+    "clear": "rm build/bundle.js",
+    "gh-pages" : "mv build/bundle.js bundle.js && cp -r public/images/posters images/posters/"
   },
   "repository": {
     "type": "git",

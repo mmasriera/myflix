@@ -21,4 +21,4 @@ build/bundle.js
 
 # tmp
 lists/*.js
-public/images/posters/*.jpg
+build/posters/*.jpg

@@ -26,7 +26,7 @@ module.exports = {
             },
             {
                 loader : 'url-loader',
-                test : [ /\.png$/, /\.jpg$/ ]
+                test : /\.png$/
             }
         ]
     },

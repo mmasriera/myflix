@@ -18,7 +18,7 @@ result at [page](http://mmasriera.github.com/myflix)
     - [x] babel
     - [x] compile react
     - [x] less
-    - [x] images in bundle
+    - [x] ~~images in bundle~~
     - [ ] eslint
     - [ ] run tests
  - libs/frameworks
@@ -27,6 +27,8 @@ result at [page](http://mmasriera.github.com/myflix)
     - [ ] react router ?
     - [x] ~~redux~~
     - [x] ~~bulma.io~~
+ - images
+    - [ ]  
  - style
    - [ ] responsive
 - scripts
