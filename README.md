@@ -2,7 +2,7 @@
 
 movies i've watched &amp; watchlist
 5min/day project
-result at [page](http://mmasriera.github.com/myflix)
+[page](http://mmasriera.github.com/myflix)
 
 ```bash
   # install
@@ -24,6 +24,7 @@ result at [page](http://mmasriera.github.com/myflix)
  - libs/frameworks
     - [x] react 15.0.1
     - [x] less
+    - [x] react-lazy-load
     - [ ] react router ?
     - [x] ~~redux~~
     - [x] ~~bulma.io~~
