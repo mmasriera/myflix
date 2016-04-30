@@ -8,5 +8,4 @@ module.exports = ( props ) =>
         <LazyLoad height={ 170.2 } offsetVertical={ 170 } >
             <img src={ `./posters/${ props.movie.Title }.jpg` } />
         </LazyLoad>
-        {/*<p className="title">{ props.movie.Title.substr( 0, 30 ) }</p>*/}
     </div>;

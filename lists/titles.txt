@@ -1,3 +1,4 @@
+12 years a slave
 2001 a space odyssey
 21
 21 grams
@@ -13,14 +14,17 @@ american beauty
 american gangster
 american history x
 American hustle
+american sniper
 amour
 amélie
+angels & demons
 animal house
 Annie hall
 apocalypse now
 argo
 babel
 back to the future
+being john malkovich
 Big eyes
 big fish
 Birdman or (The Unexpected Virtue of Ignorance)
@@ -38,10 +42,15 @@ braveheart
 breaking the waves
 brokeback mountain
 broken flowers
+buried
 casablanca
+cashback
 casino royale
+cast away
 catch me if you can
+changeling
 charlie and the chocolate factory
+closer
 dallas buyers club
 Days Of Heaven
 dead poets society
@@ -49,6 +58,7 @@ django unchained
 Dogtooth
 Dogville
 donnie darko
+doubt
 downfall
 edward scissorhands
 el topo
@@ -58,9 +68,12 @@ enter the void
 eraserhead
 et the extra terrestrial
 Eternal Sunshine of the Spotless Mind
+Extremely Loud & Incredibly Close
 Fantastic Mr. Fox
 fargo
 fight club
+Flags of Our Fathers
+flight
 forrest gump
 four rooms
 full metal jacket
@@ -69,6 +82,7 @@ gangs of new york
 garden state
 gladiator
 gone girl
+good night and good luck
 good will hunting
 goodfellas
 Gran Torino
@@ -93,7 +107,10 @@ jaws
 jobs
 juno
 kill bill
+La vita è bella
+Letters from Iwo Jima
 Life of brian
+life of pi
 lincoln
 little miss sunshine
 locke
@@ -103,6 +120,7 @@ love actually
 magnolia
 Manderlay
 manhunter
+match point
 matchstick men
 me myself & irene
 meet the fockers
@@ -110,6 +128,7 @@ meet the parents
 Melancholia
 memento
 midnight in paris
+milk
 million dollar baby
 misery
 moon
@@ -118,6 +137,7 @@ more things that happened
 Mulholland Drive
 my dinner with andre
 mystic river
+nebraska
 no country for old men
 ocean's eleven
 ocean's thirteen
@@ -131,6 +151,7 @@ psycho
 pulp fiction
 quantum of solace
 rabbits
+ray
 red dragon
 requiem for a dream
 reservoir dogs
@@ -143,6 +164,7 @@ se7en
 seven pounds
 shutter island
 sicario
+signs
 skyfall
 sleepy hollow
 slumdog millionaire
@@ -156,12 +178,13 @@ the aviator
 the beach
 the big lebowski
 the breakfast club
+The Bridges of Madison County
 the bucket list
 the color purple
 the curious case of benjamin button
+the da vinci code
 the darjeeling limited
 the dark knight
-the departed
 the departed
 the descendants
 the devil wears prada
@@ -170,15 +193,19 @@ the english patient
 the girlfriend experience
 the godfather
 the godfather part ii
+The Godfather: Part III
 the graduate
 The Grand Budapest Hotel
 the green mile
 the hangover
 The hateful eight
 the hunt
+the imitation game
 the intouchables
+The Kids Are All Right
 the king's speech
 the life aquatic with steve zissou
+the machinist
 the man from earth
 The man from uncle
 the martian
@@ -194,20 +221,32 @@ the royal tenenbaums
 the shawshank redemption
 the shining
 the silence of the lambs
+the sixth sense
 the social network
+the soloist
+the spirit of the beehive
 the straight story
 the terminal
+the theory of everything
 the thin red line
 the tourist
 the tree of life
 the truman show
+the village
 The wolf of wall street
 thelma & louise
 there will be blood
 to rome with love
 top gun
+true grit
+up in the air
 valkyrie
 vertigo
+wall-e
+war horse
 whiplash
 wild at heart
+wish i was here
+yes man
+zero dark thirty
 zodiac
