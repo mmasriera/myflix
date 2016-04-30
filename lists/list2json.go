@@ -62,11 +62,20 @@ func getData( url string ) []byte {
 	return bodyData
 }
 
+// omdb format
+func omdbFormatTitle( title string ) string {
+
+	var result string = strings.Replace( title, " ", "+", -1 )
+	result = strings.Replace( result, "&", "%26", -1 )
+
+	return result
+}
+
 // given the title of a film, gets its info (omdb) and saves its poster
-func title2jsonString( title string ) string {
+func title2json( title string ) string {
 
 	// get movie data
-	var formattedTitle string = strings.Replace( title, " ", "+", -1 )//omdbFormatTitle( title )
+	var formattedTitle string = omdbFormatTitle( title )
 	var jsonData []byte = getData( "http://www.omdbapi.com/?t=" + formattedTitle + "&y=&plot=short&r=json" )
 	var movie Movie
 	json.Unmarshal( jsonData, &movie ) // struct
@@ -105,7 +114,7 @@ func main() {
 
 		var title string = input.Text()
 		fmt.Println( title )
-		movies = append( movies, title2jsonString( title ) )
+		movies = append( movies, title2json( title ) )
 	}
 
 	// overwrite file

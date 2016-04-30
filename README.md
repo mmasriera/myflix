@@ -10,15 +10,13 @@ movies i've watched &amp; watchlist
   # build
   npm run build
 ```
-
 ===
-
 - front
  - webpack
     - [x] babel
     - [x] compile react
     - [x] less
-    - [x] ~~images in bundle~~
+    - [x] ~~images in bundle~~ lazy load
     - [ ] eslint
     - [ ] run tests
  - libs/frameworks
