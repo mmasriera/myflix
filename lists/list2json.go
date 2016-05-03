@@ -21,7 +21,7 @@ import(
 type Movie struct {
     Title 		string
 	Year 		string
-	Rated 		string
+	//Rated 		string
 	Released 	string
 	Runtime 	string
 	Genre 		string
@@ -33,19 +33,18 @@ type Movie struct {
 	Country 	string
 	Awards 		string
 	Poster  	string
-	ImdbRating 	string
-	Metascore 	string
-	ImdbVotes 	string
-	ImdbID 		string
-	Type 		string
-	Response 	string
+	//ImdbRating 	string
+	//Metascore 	string
+	//ImdbVotes 	string
+	//ImdbID 		string
+	//Type 		string
+	//Response 	string
 }
 
 // makes an http.get request, and returns the response
 func getData( url string ) []byte {
 
 	resp, errGet := http.Get( url )
-
 	if errGet != nil {
 
 		panic( errGet )
@@ -53,7 +52,6 @@ func getData( url string ) []byte {
 
     bodyData, errBody := ioutil.ReadAll( resp.Body )
 	defer resp.Body.Close()
-
 	if errBody != nil {
 
     	panic( errBody )
@@ -80,7 +78,6 @@ func title2json( title string ) string {
 	var movie Movie
 	json.Unmarshal( jsonData, &movie ) // struct
 	jsonEncoded, err3 := json.Marshal( movie ) // to string
-
 	if err3 != nil {
 
     	panic( err3 )
@@ -89,7 +86,6 @@ func title2json( title string ) string {
 	// save poster
 	var image []byte = getData( strings.Replace( movie.Poster, "SX300", "SX110", 1 ) ) // width 125px (original: 300px)
 	errImg := ioutil.WriteFile( "../build/posters/" + movie.Title + ".jpg" , image, 0644 )
-
 	if errImg != nil {
 
 		panic( errImg )
@@ -102,7 +98,6 @@ func main() {
 
 	file, err1 := os.Open( "titles.txt" )
 	defer file.Close()
-
 	if err1 != nil {
 
 		panic( err1 )
@@ -120,7 +115,6 @@ func main() {
 	// overwrite file
 	moviesData := []byte( "module.exports = [" + strings.Join( movies, "," ) + "];" )
 	err2 := ioutil.WriteFile( "list.js", moviesData, 0644 )
-
 	if err2 != nil {
 
 		panic( err2 )
