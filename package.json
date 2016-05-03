@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "list2json": "rm -rf build/posters && mkdir build/posters && (cd lists && sort -f -o titles.txt titles.txt && exec go run list2json.go)",
-    "build": "webpack",
-    "build-prod": "webpack -p",
+    "build": "webpack --progress",
+    "build-prod": "webpack -p --config webpack.config.prod.js",
     "start": "webpack-dev-server"
   },
   "repository": {
