@@ -31,6 +31,7 @@ movies i've watched &amp; watchlist
     - [x] ~~bulma.io~~
  - style
    - [ ] responsive
+ - [ ] highlight
 - scripts
  - list --> json
     - [x] go lang 'not very good for scripting'
