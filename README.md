@@ -1,12 +1,16 @@
 # myflix
 
 movies i've watched &amp; watchlist
+
 5min/day project
+
 [page](http://mmasriera.github.com/myflix)
 
 ```bash
   # install
   npm i
+  # download data
+  npm run list2json
   # build
   npm run build
 ```
@@ -23,11 +27,8 @@ movies i've watched &amp; watchlist
     - [x] react 15.0.1
     - [x] less
     - [x] react-lazy-load
-    - [ ] react router ?
     - [x] ~~redux~~
     - [x] ~~bulma.io~~
- - images
-    - [ ]  
  - style
    - [ ] responsive
 - scripts
@@ -36,4 +37,4 @@ movies i've watched &amp; watchlist
     - [x] download images bc:[imdb poster api issue](http://stackoverflow.com/questions/28676608/403-error-for-loading-image-from-http-and-not-https/28676680#28676680)
     - [ ] "deploy"
 - other
-  - watchlist --> file + script + front
+  - [ ] watchlist --> file + script + front

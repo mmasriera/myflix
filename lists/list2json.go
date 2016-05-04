@@ -84,7 +84,7 @@ func title2json( title string ) string {
     }
 
 	// save poster
-	var image []byte = getData( strings.Replace( movie.Poster, "SX300", "SX110", 1 ) ) // width 125px (original: 300px)
+	var image []byte = getData( strings.Replace( movie.Poster, "SX300", "SX105", 1 ) ) // width 125px (original: 300px)
 	errImg := ioutil.WriteFile( "../build/posters/" + movie.Title + ".jpg" , image, 0644 )
 	if errImg != nil {
 
