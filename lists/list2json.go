@@ -39,6 +39,7 @@ type Movie struct {
 	//ImdbID 		string
 	//Type 		string
 	//Response 	string
+	Error		string
 }
 
 // makes an http.get request, and returns the response
@@ -77,6 +78,12 @@ func title2json( title string ) string {
 	var jsonData []byte = getData( "http://www.omdbapi.com/?t=" + formattedTitle + "&y=&plot=short&r=json" )
 	var movie Movie
 	json.Unmarshal( jsonData, &movie ) // struct
+	if movie.Error == "Movie not found!"  {
+
+		fmt.Println( "error:", title, movie.Error )
+		return ""
+	}
+
 	jsonEncoded, err3 := json.Marshal( movie ) // to string
 	if err3 != nil {
 
@@ -84,7 +91,7 @@ func title2json( title string ) string {
     }
 
 	// save poster
-	var image []byte = getData( strings.Replace( movie.Poster, "SX300", "SX105", 1 ) ) // width 125px (original: 300px)
+	var image []byte = getData( strings.Replace( movie.Poster, "SX300", "SX95", 1 ) ) // width 125px (original: 300px)
 	errImg := ioutil.WriteFile( "../build/posters/" + movie.Title + ".jpg" , image, 0644 )
 	if errImg != nil {
 

@@ -52,6 +52,7 @@ changeling
 charlie and the chocolate factory
 closer
 dallas buyers club
+dancer in the dark
 Days Of Heaven
 dead poets society
 django unchained
@@ -101,6 +102,7 @@ Inland Empire
 inside out
 Interstellar
 invictus
+irreversible
 j edgar
 jackie brown
 jaws
@@ -139,10 +141,13 @@ my dinner with andre
 mystic river
 nebraska
 no country for old men
+Nymphomaniac: Vol. I
+Nymphomaniac: Vol. II
 ocean's eleven
 ocean's thirteen
 ocean's twelve
 pan's labyrinth
+paris, texas
 pearl harbor
 precious
 Primer
@@ -188,6 +193,7 @@ the dark knight
 the departed
 the descendants
 the devil wears prada
+the element of crime
 the elephant man
 the english patient
 the girlfriend experience
@@ -204,7 +210,9 @@ the imitation game
 the intouchables
 The Kids Are All Right
 the king's speech
+the lbster
 the life aquatic with steve zissou
+the lobster
 the machinist
 the man from earth
 The man from uncle
@@ -218,6 +226,7 @@ the prestige
 the pursuit of happyness
 The revenant
 the royal tenenbaums
+the science of sleep
 the shawshank redemption
 the shining
 the silence of the lambs
@@ -232,18 +241,21 @@ the thin red line
 the tourist
 the tree of life
 the truman show
+the usual suspects
 the village
 The wolf of wall street
 thelma & louise
 there will be blood
 to rome with love
 top gun
+trainspotting
 true grit
 up in the air
 valkyrie
 vertigo
 wall-e
 war horse
+warrior
 whiplash
 wild at heart
 wish i was here
