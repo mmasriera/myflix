@@ -16,6 +16,8 @@ import(
 	"io/ioutil"
 	"strings"
 	"encoding/json"
+	"sync"
+	"sort"
 )
 
 type Movie struct {
@@ -37,9 +39,46 @@ type Movie struct {
 	//Metascore 	string
 	//ImdbVotes 	string
 	//ImdbID 		string
-	//Type 		string
-	//Response 	string
+	//Type 		    string
+	//Response 		string
 	Error		string
+}
+
+type MoviesData struct {
+	list []Movie
+	sync.Mutex
+}
+
+// implementing sort interface
+func ( mvs MoviesData ) Len() int { return len( mvs.list ) }
+func ( mvs MoviesData ) Swap( a, b int ) { mvs.list[ a ], mvs.list[ b ] = mvs.list[ b ], mvs.list[ a ]  }
+func ( mvs MoviesData ) Less( a, b int ) bool { return mvs.list[ a ].Title < mvs.list[ b ].Title }
+
+// retreives the data of a movie, and adds it to the MoviesData list, an image of the movie is saved 
+func ( mvs *MoviesData ) getMovieData( title string ) {
+
+	fmt.Println( "title:", title );
+	var formattedTitle string = omdbFormatTitle( title )
+	var jsonData []byte = getData( "http://www.omdbapi.com/?t=" + formattedTitle + "&y=&plot=short&r=json" ) // get movie data
+
+	var movie Movie
+	json.Unmarshal( jsonData, &movie )
+	if movie.Error == "Movie not found!"  {
+
+		fmt.Println( "error:", title, movie.Error )
+		return
+	}
+
+	var image []byte = getData( strings.Replace( movie.Poster, "SX300", "SX95", 1 ) ) // width from 300 to 95px
+	errImg := ioutil.WriteFile( "../build/posters/" + movie.Title + ".jpg" , image, 0644 ) // save poster
+	if errImg != nil {
+
+		panic( errImg )
+	}
+
+	mvs.Lock()
+	mvs.list = append( mvs.list, movie ) // add movie to the list
+	mvs.Unlock()
 }
 
 // makes an http.get request, and returns the response
@@ -70,37 +109,6 @@ func omdbFormatTitle( title string ) string {
 	return result
 }
 
-// given the title of a film, gets its info (omdb) and saves its poster
-func title2json( title string ) string {
-
-	// get movie data
-	var formattedTitle string = omdbFormatTitle( title )
-	var jsonData []byte = getData( "http://www.omdbapi.com/?t=" + formattedTitle + "&y=&plot=short&r=json" )
-	var movie Movie
-	json.Unmarshal( jsonData, &movie ) // struct
-	if movie.Error == "Movie not found!"  {
-
-		fmt.Println( "error:", title, movie.Error )
-		return ""
-	}
-
-	jsonEncoded, err3 := json.Marshal( movie ) // to string
-	if err3 != nil {
-
-    	panic( err3 )
-    }
-
-	// save poster
-	var image []byte = getData( strings.Replace( movie.Poster, "SX300", "SX95", 1 ) ) // width 125px (original: 300px)
-	errImg := ioutil.WriteFile( "../build/posters/" + movie.Title + ".jpg" , image, 0644 )
-	if errImg != nil {
-
-		panic( errImg )
-	}
-
-	return string( jsonEncoded )
-}
-
 func main() {
 
 	file, err1 := os.Open( "titles.txt" )
@@ -110,18 +118,34 @@ func main() {
 		panic( err1 )
 	}
 
-	var movies []string
+	var wg sync.WaitGroup
+	var movies MoviesData
+
 	input := bufio.NewScanner( file )
 	for input.Scan() { // line by line
 
-		var title string = input.Text()
-		fmt.Println( title )
-		movies = append( movies, title2json( title ) )
+		wg.Add( 1 )
+
+		go func( title string ) {
+
+			defer wg.Done()
+			movies.getMovieData( title )
+
+		}( input.Text() )
 	}
 
-	// overwrite file
-	moviesData := []byte( "module.exports = [" + strings.Join( movies, "," ) + "];" )
-	err2 := ioutil.WriteFile( "list.js", moviesData, 0644 )
+	wg.Wait()
+
+	sort.Sort( MoviesData( movies ) ) // sort movies
+
+	jsonEncoded, errEncJSON := json.Marshal( movies.list ) // to json
+	if errEncJSON != nil {
+
+    	panic( errEncJSON )
+    }
+
+	var content string = "module.exports = " + string( jsonEncoded ) + ";" // to string
+	err2 := ioutil.WriteFile( "list.js", []byte( content ), 0644 )
 	if err2 != nil {
 
 		panic( err2 )
