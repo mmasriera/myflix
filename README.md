@@ -38,7 +38,7 @@ movies i've watched &amp; watchlist
     - [x] download images bc:[imdb poster api issue](http://stackoverflow.com/questions/28676608/403-error-for-loading-image-from-http-and-not-https/28676680#28676680)
     - [ ] "deploy"
     - versions:
-      - (sequential)[https://github.com/mmasriera/myflix/blob/list2json-seq/lists/list2json.go]
-      - **current** (concurrent (waitgroup+mutex))[https://github.com/mmasriera/myflix/blob/conc-waitgroup/lists/list2json.go]
+      - [sequential](https://github.com/mmasriera/myflix/blob/list2json-seq/lists/list2json.go)
+      - **current** [concurrent (waitgroup+mutex)](https://github.com/mmasriera/myflix/blob/conc-waitgroup/lists/list2json.go)
 - other
   - [ ] watchlist --> file + script + front
