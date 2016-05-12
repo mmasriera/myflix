@@ -31,11 +31,14 @@ movies i've watched &amp; watchlist
     - [x] ~~bulma.io~~
  - style
    - [ ] responsive
- - [ ] highlight
+ - [ ] highlight movies
 - scripts
  - list --> json
     - [x] go lang 'not very good for scripting'
     - [x] download images bc:[imdb poster api issue](http://stackoverflow.com/questions/28676608/403-error-for-loading-image-from-http-and-not-https/28676680#28676680)
     - [ ] "deploy"
+    - versions:
+      - (sequential)[asdnmfasd]
+      - (concurrent (waitgroup+mutex))[sadfdf]
 - other
   - [ ] watchlist --> file + script + front
