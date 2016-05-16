@@ -1,3 +1,4 @@
+
 12 years a slave
 2001 a space odyssey
 21
@@ -30,6 +31,7 @@ big fish
 Birdman or (The Unexpected Virtue of Ignorance)
 biutiful
 black swan
+Blue Is the Warmest Color
 blue jasmine
 Blue velvet
 boogie nights
@@ -165,6 +167,7 @@ reservoir dogs
 rushmore
 saving private ryan
 scarface
+Schindler's List
 schindler's list
 scoop
 se7en
@@ -176,6 +179,7 @@ skyfall
 sleepy hollow
 slumdog millionaire
 spotlight
+stalker
 sweeney todd: the demon barber of fleet street
 synecdoche, new york
 taxi driver
@@ -184,9 +188,11 @@ The Assassination of Jesse James by the Coward Robert Ford
 the aviator
 the beach
 the big lebowski
+The Boy in the Striped Pajamas
 the breakfast club
 The Bridges of Madison County
 the bucket list
+the butterfly effect
 the color purple
 the curious case of benjamin button
 the da vinci code
@@ -198,6 +204,7 @@ the devil wears prada
 the element of crime
 the elephant man
 the english patient
+the fifth element
 the girlfriend experience
 the godfather
 the godfather part ii
