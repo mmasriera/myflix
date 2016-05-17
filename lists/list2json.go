@@ -20,10 +20,10 @@ import (
 	"sync"
 )
 
+// Movie data, fields of the json response from ombd
 type Movie struct {
-	Title string
-	Year  string
-	//Rated 		string
+	Title    string
+	Year     string
 	Released string
 	Runtime  string
 	Genre    string
@@ -35,13 +35,14 @@ type Movie struct {
 	Country  string
 	Awards   string
 	Poster   string
+	Error    string
+	ImdbID   string
 	//ImdbRating 	string
 	//Metascore 	string
 	//ImdbVotes 	string
-	//ImdbID 		string
 	//Type 		    string
 	//Response 		string
-	Error string
+	//Rated 		string
 }
 
 // MoviesData lsit of movies and mutex to safely update it
@@ -98,11 +99,14 @@ func (mvs *MoviesData) getMovieData(title string) {
 		return
 	}
 
-	image := getData(strings.Replace(movie.Poster, "SX300", "SX95", 1))             // width from 300 to 95px
-	errImg := ioutil.WriteFile("../build/posters/"+movie.Title+".jpg", image, 0644) // save poster
-	if errImg != nil {
+	if movie.Poster != "N/A" {
 
-		panic(errImg)
+		image := getData(strings.Replace(movie.Poster, "SX300", "SX95", 1))             // width from 300 to 95px
+		errImg := ioutil.WriteFile("../build/posters/"+movie.Title+".jpg", image, 0644) // save poster
+		if errImg != nil {
+
+			panic(errImg)
+		}
 	}
 
 	mvs.Lock()

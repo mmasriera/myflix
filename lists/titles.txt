@@ -1,4 +1,3 @@
-
 12 years a slave
 2001 a space odyssey
 21
@@ -97,6 +96,7 @@ hannibal
 hannibal rising
 Her
 hereafter
+I'm not there.
 inception
 inglourious basterds
 inherent vice
@@ -167,7 +167,6 @@ reservoir dogs
 rushmore
 saving private ryan
 scarface
-Schindler's List
 schindler's list
 scoop
 se7en
