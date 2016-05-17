@@ -7,7 +7,7 @@ const webpack = require( 'webpack' ),
 
 module.exports = {
     entry : {
-        public : paths.public
+        public : `${ paths.public }/index.jsx`
     },
     output : {
         path : paths.build,

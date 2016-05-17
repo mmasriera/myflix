@@ -20,7 +20,8 @@ import (
 	"sync"
 )
 
-// Movie data, fields of the json response from ombd
+// Movie will contain the data the omdb api provides
+// unused files: ImdbRating ,Metascore, ImdbVotes, Type, Response, Rated
 type Movie struct {
 	Title    string
 	Year     string
@@ -37,12 +38,6 @@ type Movie struct {
 	Poster   string
 	Error    string
 	ImdbID   string
-	//ImdbRating 	string
-	//Metascore 	string
-	//ImdbVotes 	string
-	//Type 		    string
-	//Response 		string
-	//Rated 		string
 }
 
 // MoviesData lsit of movies and mutex to safely update it
@@ -51,7 +46,7 @@ type MoviesData struct {
 	sync.Mutex
 }
 
-// implementing sort interface
+// MoviesData implements the sort interface
 func (mvs MoviesData) Len() int           { return len(mvs.list) }
 func (mvs MoviesData) Swap(a, b int)      { mvs.list[a], mvs.list[b] = mvs.list[b], mvs.list[a] }
 func (mvs MoviesData) Less(a, b int) bool { return mvs.list[a].Title < mvs.list[b].Title }
@@ -99,14 +94,12 @@ func (mvs *MoviesData) getMovieData(title string) {
 		return
 	}
 
-	if movie.Poster != "N/A" {
+	// check error when movie.Poster is "N/A" (so far it's not the case)
+	image := getData(strings.Replace(movie.Poster, "SX300", "SX95", 1))             // width from 300 to 95px
+	errImg := ioutil.WriteFile("../build/posters/"+movie.Title+".jpg", image, 0644) // save poster
+	if errImg != nil {
 
-		image := getData(strings.Replace(movie.Poster, "SX300", "SX95", 1))             // width from 300 to 95px
-		errImg := ioutil.WriteFile("../build/posters/"+movie.Title+".jpg", image, 0644) // save poster
-		if errImg != nil {
-
-			panic(errImg)
-		}
+		panic(errImg)
 	}
 
 	mvs.Lock()
