@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "list2json": "rm -rf build/posters && mkdir build/posters && (cd lists && sort -f -o titles.txt titles.txt && exec go run list2json.go)",
-    "build": "webpack --progress",
-    "build-prod": "webpack -p --config webpack.config.prod.js",
+    "updated-date" : "currentdate=$(date +%d-%m-%Y) && sed -i '' \"s/[0-9]*-[0-9]*-[0-9]*/$currentdate/\" public/index.jsx",
+    "build": "npm run updated-date && webpack --progress",
+    "build-prod": "npm run updated-date && webpack -p --config webpack.config.prod.js",
     "start": "webpack-dev-server"
   },
   "repository": {
