@@ -16,6 +16,7 @@ american gangster
 american history x
 American hustle
 american sniper
+amores perros
 amour
 amélie
 angels & demons
@@ -30,6 +31,7 @@ being john malkovich
 Big eyes
 big fish
 Birdman or (The Unexpected Virtue of Ignorance)
+birth
 biutiful
 black swan
 Blue Is the Warmest Color
@@ -53,7 +55,9 @@ cast away
 catch me if you can
 changeling
 charlie and the chocolate factory
+children of men
 closer
+coherence
 dallas buyers club
 dancer in the dark
 Days Of Heaven
@@ -118,6 +122,7 @@ jobs
 juno
 kill bill
 La vita è bella
+Leaving las vegas
 Letters from Iwo Jima
 Life of brian
 life of pi
@@ -165,6 +170,7 @@ Primer
 prisoners
 psycho
 pulp fiction
+Punch-Drunk Love
 quantum of solace
 rabbits
 ray
@@ -186,6 +192,7 @@ sleepy hollow
 slumdog millionaire
 spotlight
 stalker
+submarine
 sweeney todd: the demon barber of fleet street
 synecdoche, new york
 take the money and run
@@ -211,6 +218,7 @@ the devil wears prada
 the element of crime
 the elephant man
 the english patient
+the fall
 the fifth element
 the girlfriend experience
 the godfather
@@ -267,11 +275,14 @@ to rome with love
 top gun
 trainspotting
 true grit
+true romance
 up in the air
 upstream color
 valkyrie
+vanilla sky
 vertigo
 Vicky Cristina Barcelona
+videodrome
 wall-e
 war horse
 warrior

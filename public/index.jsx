@@ -27,7 +27,7 @@ const App = React.createClass({
                 <div id="sidebar">
                     <div id="page-info">
                         <h2>{ "movies I've seen" }</h2>
-                        <p>last update 22-05-2016</p>
+                        <p>last update 24-05-2016</p>
                         <p>miquel masriera</p>
                         <hr></hr>
                     </div>
