@@ -4,5 +4,6 @@ cp build/bundle.js bundle.js
 rm -rf posters
 cp -r build/posters posters/
 #to gh pages
-git commit -am 'update'
+git add *
+git commit -m 'update'
 git push
