@@ -118,11 +118,13 @@ func main() {
 
 	var wg sync.WaitGroup
 	var movies MoviesData
+	i := 0
 
 	input := bufio.NewScanner(file)
 	for input.Scan() { // line by line
 
 		wg.Add(1)
+		i++
 
 		go func(title string) {
 
@@ -130,6 +132,10 @@ func main() {
 			movies.getMovieData(title)
 
 		}(input.Text())
+
+		if i%10 == 0 {
+			wg.Wait()
+		}
 	}
 
 	wg.Wait()
