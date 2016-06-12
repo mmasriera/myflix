@@ -1,3 +1,4 @@
+12 angry men
 12 years a slave
 2001 a space odyssey
 21
@@ -65,6 +66,7 @@ dallas buyers club
 dancer in the dark
 Days Of Heaven
 dead poets society
+diamond flash
 django unchained
 Dogtooth
 Dogville
@@ -127,6 +129,7 @@ jaws
 jobs
 juno
 kill bill
+knight of cups
 La vita è bella
 Leaving las vegas
 Letters from Iwo Jima
@@ -194,6 +197,7 @@ seven pounds
 shutter island
 sicario
 signs
+sin city
 skyfall
 sleepy hollow
 slumdog millionaire
@@ -251,6 +255,7 @@ The man from uncle
 the martian
 the master
 the matrix
+The Men Who Stare at Goats
 the notebook
 the others
 the pianist

@@ -95,7 +95,7 @@ func (mvs *MoviesData) getMovieData(title string) {
 	}
 
 	// check error when movie.Poster is "N/A" (so far it's not the case)
-	image := getData(strings.Replace(movie.Poster, "SX300", "SX95", 1))             // width from 300 to 95px
+	image := getData(strings.Replace(movie.Poster, "SX300", "SX88", 1))             // original width 300 converted to 88px
 	errImg := ioutil.WriteFile("../build/posters/"+movie.Title+".jpg", image, 0644) // save poster
 	if errImg != nil {
 
@@ -118,13 +118,12 @@ func main() {
 
 	var wg sync.WaitGroup
 	var movies MoviesData
-	i := 0
+	count := 0
 
 	input := bufio.NewScanner(file)
 	for input.Scan() { // line by line
 
 		wg.Add(1)
-		i++
 
 		go func(title string) {
 
@@ -133,7 +132,7 @@ func main() {
 
 		}(input.Text())
 
-		if i%10 == 0 {
+		if count++; count%10 == 0 { // TODO:
 			wg.Wait()
 		}
 	}
