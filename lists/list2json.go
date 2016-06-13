@@ -132,7 +132,8 @@ func main() {
 
 		}(input.Text())
 
-		if count++; count%10 == 0 { // TODO:
+		count++
+		if count%10 == 0 { // TODO:
 			wg.Wait()
 		}
 	}

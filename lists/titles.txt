@@ -24,9 +24,11 @@ angels & demons
 animal house
 anna
 Annie hall
+anomalisa
 another year
 antichrist
 apocalypse now
+apollo 13
 argo
 babel
 back to the future
@@ -47,6 +49,7 @@ bowling for columbine
 boyhood
 brave
 braveheart
+brazil
 breaking the waves
 brokeback mountain
 broken flowers
@@ -62,6 +65,7 @@ charlie and the chocolate factory
 children of men
 closer
 coherence
+cube
 dallas buyers club
 dancer in the dark
 Days Of Heaven
@@ -85,6 +89,7 @@ et the extra terrestrial
 Eternal Sunshine of the Spotless Mind
 Everyone Says I Love You
 Everything You Always Wanted to Know About Sex * But Were Afraid to Ask
+ex machina
 Extremely Loud & Incredibly Close
 eyes wide shut
 Fantastic Mr. Fox
@@ -94,6 +99,7 @@ Flags of Our Fathers
 flight
 forrest gump
 four rooms
+fried green tomatoes
 full metal jacket
 funny games
 gangs of new york
@@ -121,6 +127,7 @@ inherent vice
 Inland Empire
 inside out
 Interstellar
+into the wild
 invictus
 irreversible
 j edgar
@@ -129,9 +136,12 @@ jaws
 jobs
 juno
 kill bill
+kill bill: vol 2
+killing them softly
 knight of cups
 La vita è bella
 Leaving las vegas
+let the right one in
 Letters from Iwo Jima
 Life of brian
 life of pi
@@ -141,10 +151,12 @@ locke
 lost highway
 lost in translation
 love actually
+magical girl
 magnolia
 Manderlay
 Manhattan Murder Mystery
 manhunter
+martha marcy may marlene
 match point
 matchstick men
 Me and Earl and the Dying Girl
@@ -194,6 +206,7 @@ schindler's list
 scoop
 se7en
 seven pounds
+shame
 shutter island
 sicario
 signs
@@ -242,6 +255,7 @@ The Grand Budapest Hotel
 the green mile
 the hangover
 The hateful eight
+the hours
 the hunt
 the imitation game
 the intouchables
@@ -268,6 +282,7 @@ the shawshank redemption
 the shining
 the silence of the lambs
 the sixth sense
+the skin i live in
 the social network
 the soloist
 the spirit of the beehive
@@ -289,6 +304,7 @@ top gun
 trainspotting
 true grit
 true romance
+unbreakable
 up in the air
 upstream color
 valkyrie
