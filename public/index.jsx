@@ -11,12 +11,17 @@ const App = React.createClass({
 
     getInitialState() {
 
-        return { movie : null }
+        return { movie : null, searchText : '' }
     },
 
     updateMovie( newMovie ) {
 
         this.setState({ movie : newMovie });
+    },
+
+    handleChange( event ) {
+
+        this.setState({ searchText : event.target.value });
     },
 
     render() {
@@ -27,8 +32,12 @@ const App = React.createClass({
                 <div id="sidebar">
                     <div id="page-info">
                         <h2>{ "movies I've seen" }</h2>
-                        <p>last update 13-06-2016</p>
+                        <p>last update 17-06-2016</p>
                         <hr></hr>
+                    </div>
+
+                    <div id="search" onChange={ this.handleChange }>
+                        <input type="text"/>
                     </div>
 
                     <MovieInfo { ...this.state.movie } />
@@ -38,7 +47,7 @@ const App = React.createClass({
                     </a>
                 </div>
 
-            	<List updateMovie={ this.updateMovie } />
+            	<List updateMovie={ this.updateMovie } searchText={ this.state.searchText }/>
 
         	</div>
         );

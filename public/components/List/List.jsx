@@ -12,7 +12,17 @@ module.exports =  React.createClass({
 
     render() {
 
-        var movies = movieList.map( ( movie, idx ) => <Movie movie={ movie } key={ `mov-${idx}` } select={ this.selectMovie } /> );
+        var searchText = this.props.searchText,
+            movies = movieList.filter( ( mv ) => {
+
+                if ( !searchText ) return true; //empty string
+
+                return mv.Title.toLowerCase().includes( searchText ) ||
+                    mv.Year.toLowerCase().includes( searchText ) ||
+                    mv.Director.toLowerCase().includes( searchText ) ||
+                    mv.Actors.toLowerCase().includes( searchText );
+            })
+            .map( ( movie, idx ) => <Movie movie={ movie } key={ `mov-${idx}` } select={ this.selectMovie } /> );
 
         return(
         	<div id="movies">{ movies }</div>
