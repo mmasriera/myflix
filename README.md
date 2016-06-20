@@ -9,7 +9,7 @@ TODO :
  - [ ] series
  - [ ] personal recommendations/ranking
 
-list of movies ```bash lists/titles.txt```
+list of movies ``` lists/titles.txt```
 
 ```bash
   # install deps
