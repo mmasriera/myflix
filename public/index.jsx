@@ -32,12 +32,12 @@ const App = React.createClass({
                 <div id="sidebar">
                     <div id="page-info">
                         <h2>{ "movies I've seen" }</h2>
-                        <p>last update 17-06-2016</p>
+                        <p>last update 20-06-2016</p>
                         <hr></hr>
                     </div>
 
                     <div id="search" onChange={ this.handleChange }>
-                        <input type="text"/>
+                        <input type="text" placeholder="Title, Director, Actor or Year"/>
                     </div>
 
                     <MovieInfo { ...this.state.movie } />

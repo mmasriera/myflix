@@ -133,7 +133,7 @@ func main() {
 		}(input.Text())
 
 		count++
-		if count%10 == 0 { // TODO:
+		if count%10 == 0 { // woorst use of waitgroup ever
 			wg.Wait()
 		}
 	}
