@@ -1,7 +1,13 @@
 # myflix
 
-movies i've watched &amp;
 [page](http://mmasriera.github.com/myflix)
+movies i've watched
+
+TODO : 
+ - [x] search
+ - [ ] watchlist
+ - [ ] series
+ - [ ] personal recommendations/ranking
 
 list of movies ```bash lists/titles.txt```
 
