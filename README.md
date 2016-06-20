@@ -1,6 +1,7 @@
 # myflix
 
-[page](http://mmasriera.github.com/myflix)
+[page] (http://mmasriera.github.com/myflix)
+
 movies i've watched
 
 TODO : 
