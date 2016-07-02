@@ -15,7 +15,7 @@ module.exports = React.createClass({
                 <p>{ `cast: ${ this.props.Actors }` }</p>
                 <p className="plot">{ `"${ this.props.Plot }"` }</p>
                 <p>{ `Awards: ${ this.props.Awards }` }</p>
-                <p><a href={ `http://www.imdb.com/title/${ this.props.ImdbID }` }>imdb</a></p>
+                <p><a href={ `http://www.imdb.com/title/${ this.props.ImdbID }` } target="_blank">imdb</a></p>
             </div>
             :
             <h2>Click a movie</h2>;

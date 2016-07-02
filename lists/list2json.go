@@ -82,7 +82,7 @@ func omdbFormatTitle(title string) string {
 // retreives the data of a movie, and adds it to the MoviesData list, an image of the movie is saved
 func (mvs *MoviesData) getMovieData(title string) {
 
-	fmt.Println("title:", title)
+	fmt.Println(title)
 	formattedTitle := omdbFormatTitle(title)
 	jsonData := getData("http://www.omdbapi.com/?t=" + formattedTitle + "&y=&plot=short&r=json") // get movie data
 

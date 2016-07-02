@@ -32,7 +32,7 @@ const App = React.createClass({
                 <div id="sidebar">
                     <div id="page-info">
                         <h2>{ "movies I've seen" }</h2>
-                        <p>last update 20-06-2016</p>
+                        <p>last update 02-07-2016</p>
                         <hr></hr>
                     </div>
 
