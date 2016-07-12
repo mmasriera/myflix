@@ -164,6 +164,7 @@ love
 love actually
 magical girl
 magnolia
+man of steel
 Manderlay
 Manhattan Murder Mystery
 manhunter
@@ -248,6 +249,7 @@ taxi driver
 the artist
 The Assassination of Jesse James by the Coward Robert Ford
 the aviator
+the babadook
 the beach
 the big lebowski
 the blair witch project
@@ -297,6 +299,7 @@ the master
 the matrix
 the matrix reloaded
 The Men Who Stare at Goats
+the new world
 the next three days
 the notebook
 the others
@@ -332,7 +335,9 @@ top gun
 trainspotting
 true grit
 true romance
+twin peaks fire walk with me
 unbreakable
+unforgiven
 up
 up in the air
 upstream color

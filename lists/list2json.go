@@ -33,7 +33,6 @@ type Movie struct {
 	Actors   string
 	Plot     string
 	Language string
-	Country  string
 	Awards   string
 	Poster   string
 	Error    string
@@ -133,7 +132,7 @@ func main() {
 		}(input.Text())
 
 		count++
-		if count%10 == 0 { // woorst use of waitgroup ever
+		if count%10 == 0 { // ...
 			wg.Wait()
 		}
 	}

@@ -8,7 +8,7 @@ module.exports = React.createClass({
         const movieInfo = this.props.Title ?
             <div>
                 <h2>{ this.props.Title }</h2>
-                <p>{ `${ this.props.Year } ${ this.props.Country.split( ',' )[ 0 ] }` }</p>
+                <p>{ this.props.Year }</p>
                 <p>{ `${ this.props.Runtime } - ${ this.props.Genre }` }</p>
                 <p>{ `directed by: ${ this.props.Director }` }</p>
                 <p>{ `written by: ${ this.props.Writer }` }</p>
