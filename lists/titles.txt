@@ -9,6 +9,7 @@ a beautiful mind
 a clockwork orange
 a few good men
 a serbian film
+a serious man
 across the universe
 adaptation.
 Alps
@@ -34,6 +35,7 @@ argo
 avatar
 babel
 back to the future
+before sunset
 being john malkovich
 Big eyes
 big fish
@@ -68,6 +70,7 @@ cast away
 catch me if you can
 certified copy
 changeling
+Charlie and the Chocolate Factory
 charlie and the chocolate factory
 children of men
 closer
@@ -108,6 +111,7 @@ Flags of Our Fathers
 flight
 forrest gump
 four rooms
+frank
 fried green tomatoes
 full metal jacket
 funny games
@@ -129,6 +133,7 @@ hannibal rising
 hard candy
 Her
 hereafter
+holy motors
 I'm not there.
 incendies
 inception
@@ -153,6 +158,7 @@ La vita è bella
 Leaving las vegas
 let the right one in
 Letters from Iwo Jima
+life is beautiful
 Life of brian
 life of pi
 lincoln
@@ -196,6 +202,7 @@ nightcrawler
 no country for old men
 Nymphomaniac: Vol. I
 Nymphomaniac: Vol. II
+O Brother, Where Art Thou?
 ocean's eleven
 ocean's thirteen
 ocean's twelve
@@ -203,6 +210,7 @@ pan's labyrinth
 paris, texas
 pearl harbor
 perfume: the story of a murderer
+persona
 pirates of silicon valley
 precious
 Primer
@@ -284,6 +292,7 @@ the hangover
 The hateful eight
 the hours
 the hunt
+the hurt locker
 the imitation game
 the impossible
 the intouchables
@@ -327,9 +336,13 @@ the truman show
 the usual suspects
 the village
 the virgin suicides
+the white ribbon
 The wolf of wall street
 thelma & louise
 there will be blood
+three colors: blue
+three colors: red
+three colors: white
 to rome with love
 top gun
 trainspotting
@@ -351,6 +364,7 @@ war horse
 warrior
 whiplash
 wild at heart
+Willy Wonka & the Chocolate Factory
 wish i was here
 yes man
 Young Frankenstein
