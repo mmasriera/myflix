@@ -31,4 +31,13 @@ list of movies ``` lists/titles.txt```
   - **images-in-bundle** images in bundle.js via webpack, :exclamation:bundle.js size
   - **images-lazyload** images saved in a specific directory, and rendered as the page loads
 - front
-  - **sidebar-grid** ![v1](https://gyazo.com/3d286e1238e2a520353341cb4d9a6de6.png)
+  - **v1** ![v1](https://gyazo.com/3d286e1238e2a520353341cb4d9a6de6.png)
+  - **gh-pages-v1** the gh-pages for the v1
+  ```bash 
+    # build v1
+    git checkout v1
+    npm run list2json
+    build-prod
+    git checkout gh-pages
+    sh prod.sh
+  ```
