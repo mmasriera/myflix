@@ -1,32 +1,32 @@
 
-require( './style.less' );
+require( './style.scss' );
 
 const React     = require( 'react' ),
-      ReactDOM  = require( 'react-dom' ),
-      ghLogo    = require( './images/gh-logo.png' ),
+      ReactDOM  = require( 'react-dom' );
+      /*ghLogo    = require( './images/gh-logo.png' ),
       MovieInfo = require( './components/MovieInfo/MovieInfo.jsx' ),
-      List      = require( './components/List/List.jsx' );
+      List      = require( './components/List/List.jsx' );*/
 
 const App = React.createClass({
 
     getInitialState() {
 
-        return { movie : null, searchText : '' }
+        //return { movie : null, searchText : '' }
     },
 
     updateMovie( newMovie ) {
 
-        this.setState({ movie : newMovie });
+        //this.setState({ movie : newMovie });
     },
 
     handleChange( event ) {
 
-        this.setState({ searchText : event.target.value });
+        //this.setState({ searchText : event.target.value });
     },
 
     render() {
 
-        return(
+        /*return(
             <div id="container">
 
                 <div id="sidebar">
@@ -50,6 +50,19 @@ const App = React.createClass({
             	<List updateMovie={ this.updateMovie } searchText={ this.state.searchText }/>
 
         	</div>
+        );*/
+        return(
+            <div id="mainContainer">
+                <div id="topLeft">
+                    <p>top left</p>
+                </div>
+                <div id="list">
+                    list
+                </div>
+                <div id="details">
+                    details
+                </div>
+            </div>
         );
     }
 });

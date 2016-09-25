@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "list2json": "rm -rf build/posters && mkdir build/posters && (cd lists && sort -f -o titles.txt titles.txt && exec go run list2json.go)",
     "updated-date": "currentdate=$(date +%d-%m-%Y) && sed -i '' \"s/[0-9]*-[0-9]*-[0-9]*/$currentdate/\" public/index.jsx",
-    "build": "npm run updated-date && webpack --progress",
+    "build": "webpack --progress",
     "build-prod": "npm run updated-date && webpack -p --config webpack.config.prod.js",
     "start": "webpack-dev-server"
   },
@@ -22,22 +22,19 @@
   },
   "homepage": "https://github.com/mmasriera/myflix#readme",
   "devDependencies": {
-    "babel-core": "^6.9.0",
-    "babel-loader": "^6.2.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
     "css-loader": "^0.23.1",
-    "file-loader": "^0.8.5",
-    "less-loader": "^2.2.3",
+    "node-sass": "^3.10.0",
+    "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
   },
   "dependencies": {
-    "less": "^2.7.1",
-    "react": "^15.1.0",
-    "react-dom": "^15.1.0",
-    "react-lazy-load": "^3.0.10"
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
   }
 }

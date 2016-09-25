@@ -18,24 +18,23 @@ module.exports = {
             {
                 loader  : 'babel',
                 test    : /\.jsx?$/,
-                exclude : /node_modules/
+                exclude : /node_modules/,
+                query   : {
+                    presets : [ 'es2015', 'react' ]
+                }
             },
             {
-                loader : 'style!css!less',
-                test   : /\.less$/
-            },
-            {
-                loader : 'url-loader',
-                test : /\.png$/
+                loader : 'style!css!sass',
+                test   : /\.scss$/
             }
         ]
     },
     devServer : {
-        contentBase : paths.build,
+        contentBase        : paths.build,
         historyApiFallback : true,
-        hot : true,
-        inline : true,
-        progress : true
+        hot                : true,
+        inline             : true,
+        progress           : true
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
