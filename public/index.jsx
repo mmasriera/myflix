@@ -2,7 +2,9 @@
 require( './style.scss' );
 
 const React     = require( 'react' ),
-      ReactDOM  = require( 'react-dom' );
+      ReactDOM  = require( 'react-dom' ),
+      List      = require( './components/List/List.jsx' ),
+      Details   = require( './components/Details/Details.jsx' );
       /*ghLogo    = require( './images/gh-logo.png' ),
       MovieInfo = require( './components/MovieInfo/MovieInfo.jsx' ),
       List      = require( './components/List/List.jsx' );*/
@@ -12,6 +14,7 @@ const App = React.createClass({
     getInitialState() {
 
         //return { movie : null, searchText : '' }
+        return null;
     },
 
     updateMovie( newMovie ) {
@@ -56,12 +59,10 @@ const App = React.createClass({
                 <div id="topLeft">
                     <p>top left</p>
                 </div>
-                <div id="list">
-                    list
-                </div>
-                <div id="details">
-                    details
-                </div>
+
+                <List />
+
+                <Details />
             </div>
         );
     }

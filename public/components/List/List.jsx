@@ -1,31 +1,23 @@
 
-const React     = require( 'react' ),
-      movieList = require( '../../../lists/list.js' ),
-      Movie     = require( '../Movie/Movie.jsx' );
+const React = require( 'react' );
 
-module.exports =  React.createClass({
+module.exports = React.createClass({
 
-    selectMovie( movieData ) {
+    getInitialState() {
 
-        this.props.updateMovie( movieData );
+        return {
+            movieList : [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+        };
     },
 
     render() {
 
-        var searchText = this.props.searchText,
-            movies = movieList.filter( ( mv ) => {
-
-                if ( !searchText ) return true; //empty string
-
-                return mv.Title.toLowerCase().includes( searchText ) ||
-                    mv.Year.toLowerCase().includes( searchText ) ||
-                    mv.Director.toLowerCase().includes( searchText ) ||
-                    mv.Actors.toLowerCase().includes( searchText );
-            })
-            .map( ( movie, idx ) => <Movie movie={ movie } key={ `mov-${idx}` } select={ this.selectMovie } /> );
+        let movies = this.state.movieList.map( (mv, idx) => <li key={ `mv${idx}` }>{mv}</li> );
 
         return(
-        	<div id="movies">{ movies }</div>
+        	<div id="list">
+                <ul>{ movies }</ul>
+            </div>
     	);
     }
 });
