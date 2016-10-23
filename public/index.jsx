@@ -56,12 +56,13 @@ const App = React.createClass({
         );*/
         return(
             <div id="mainContainer">
-                <div id="topLeft">
-                    <p>top left</p>
+                <div id="left">
+                    <div id="myflixInfo">
+                        <h3>myflixInfo</h3>
+                        <p>myflix info...</p>
+                    </div>
+                    <List />
                 </div>
-
-                <List />
-
                 <Details />
             </div>
         );
