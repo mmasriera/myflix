@@ -1,31 +1,36 @@
 
-require( './style.scss' );
+import './style.scss';
 
-const React     = require( 'react' ),
+/*const React     = require( 'react' ),
       ReactDOM  = require( 'react-dom' ),
       List      = require( './components/List/List.jsx' ),
       Details   = require( './components/Details/Details.jsx' );
-      /*ghLogo    = require( './images/gh-logo.png' ),
+      ghLogo    = require( './images/gh-logo.png' ),
       MovieInfo = require( './components/MovieInfo/MovieInfo.jsx' ),
       List      = require( './components/List/List.jsx' );*/
 
-const App = React.createClass({
+import React from 'react';
+import {render} from 'react-dom';
+import List from './components/List/List.jsx'
+import Details from './components/Details/Details.jsx'
 
-    getInitialState() {
+class App extends React.Component {
 
+    constructor() {
+        super();
+        this.state = {};
         //return { movie : null, searchText : '' }
-        return null;
-    },
+    }
 
     updateMovie( newMovie ) {
 
         //this.setState({ movie : newMovie });
-    },
+    }
 
     handleChange( event ) {
 
         //this.setState({ searchText : event.target.value });
-    },
+    }
 
     render() {
 
@@ -53,7 +58,9 @@ const App = React.createClass({
             	<List updateMovie={ this.updateMovie } searchText={ this.state.searchText }/>
 
         	</div>
-        );*/
+        );
+*/
+
         return(
             <div id="mainContainer">
                 <div id="left">
@@ -67,6 +74,6 @@ const App = React.createClass({
             </div>
         );
     }
-});
+}
 
-ReactDOM.render( <App />, document.getElementById( 'app' ) );
+render( <App />, document.getElementById( 'app' ) );

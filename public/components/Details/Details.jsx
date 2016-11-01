@@ -1,14 +1,14 @@
 
-const React = require( 'react' );
+import React from 'react';
 
-module.exports = React.createClass({
+export default class Details extends React.Component {
 
     render() {
 
         return(
-        	<div id="details">
+            <div id="details">
                 <h3>details</h3>
             </div>
     	);
     }
-});
+};

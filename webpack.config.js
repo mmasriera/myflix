@@ -14,7 +14,7 @@ module.exports = {
         filename : 'bundle.js'
     },
     module : {
-        loaders : [
+        rules : [
             {
                 loader  : 'babel',
                 test    : /\.jsx?$/,
@@ -28,13 +28,5 @@ module.exports = {
                 test   : /\.scss$/
             }
         ]
-    },
-    devServer : {
-        contentBase        : paths.build,
-        historyApiFallback : true,
-        hot                : true,
-        inline             : true,
-        progress           : true
-    },
-    plugins: [ new webpack.HotModuleReplacementPlugin() ]
+    }
 };
