@@ -1,9 +1,9 @@
 
-const webpack = require( 'webpack' ),
-      paths   = {
-        build  : `${ __dirname }/build`,
-        public : `${ __dirname }/public`
-      };
+const webpack = require( 'webpack' );
+const paths   = {
+    build  : `${ __dirname }/build`,
+    public : `${ __dirname }/public`
+};
 
 module.exports = {
     entry : {
@@ -24,7 +24,7 @@ module.exports = {
                 }
             },
             {
-                loader : 'style!css!sass',
+                loaders : [ 'style', 'css', 'sass' ],
                 test   : /\.scss$/
             }
         ]
@@ -36,7 +36,5 @@ module.exports = {
         inline             : true,
         progress           : true
     },
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ]
+    plugins: [ new webpack.HotModuleReplacementPlugin() ]
 };
