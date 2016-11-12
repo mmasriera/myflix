@@ -1,12 +1,12 @@
 
 import React from 'react';
 
-export default class Details extends React.Component {
+export default class MovieInfo extends React.Component {
 
     render() {
 
         return(
-            <div id="details">
+            <div id="movieInfo">
                 <h3>details</h3>
             </div>
     	);

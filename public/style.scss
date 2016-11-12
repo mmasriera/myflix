@@ -1,24 +1,8 @@
 
-@import 'components/List/List.scss';
-@import 'components/Details/Details.scss';
+@import 'components/Main/Main.scss';
 
 
 html, body {
     margin: 0;
     padding: 0;
-}
-
-#mainContainer {
-    background-color: #DDD;
-
-    #left {
-        background-color : #F65;
-        width : 50%;
-        height: 100%;
-        overflow-y: scroll;
-
-        #myflixInfo {
-            background-color: white;
-        }
-    }
 }
