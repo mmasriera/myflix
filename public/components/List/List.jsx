@@ -1,21 +1,34 @@
 
 import React from 'react';
+import MovieEntry from '../MovieEntry/MovieEntry.jsx';
 
 export default class List extends React.Component {
 
     constructor() {
         super();
-        this.state = { movieList : Array.from( new Array(200) ) };
+
+        this.state = { movieList : [
+            'upstream color',
+            'inland empire',
+            'the darjeeling limited',
+            'synecdoche new york'
+        ]};
+        
+        this.select = ( title ) => {
+            console.log( title );
+        };
     }
 
-    render() {
-
-        let movies = this.state.movieList.map( (_, idx) => <li key={ `mv${idx}` }>{ `Movie #${idx}` }</li> );
+     render() {
+        let movies = this.state.movieList.map( ( title, idx ) => { 
+            const props = { title, select: this.select };
+            return <MovieEntry key={ `mv-${ idx }` } { ...props } />;
+        });
 
         return(
-        	<div id="list">
+            <div id="list">
                 <ul>{ movies }</ul>
             </div>
-    	);
+        );
     }
 };

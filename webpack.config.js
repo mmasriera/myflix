@@ -10,13 +10,13 @@ module.exports = {
         public : `${ paths.public }/index.jsx`
     },
     output : {
-        path : paths.build,
+        path     : paths.build,
         filename : 'bundle.js'
     },
     module : {
         rules : [
             {
-                loader  : 'babel',
+                loader  : 'babel-loader',
                 test    : /\.jsx?$/,
                 exclude : /node_modules/,
                 query   : {
@@ -24,8 +24,8 @@ module.exports = {
                 }
             },
             {
-                loaders : [ 'style', 'css', 'sass' ],
-                test   : /\.scss$/
+                loaders : [ 'style-loader', 'css-loader', 'sass-loader' ],
+                test    : /\.scss$/
             }
         ]
     }
