@@ -23,24 +23,18 @@ func main() {
 	if len(os.Args) < 2 {
 		printUsage()
 	}
-	// open file --> get file descriptor
 	file, errOpen := os.Open(titlesFile)
 	defer file.Close()
 	if errOpen != nil {
 		panic(errOpen)
 	}
-
 	switch os.Args[1] {
 	case "add":
-		newTitle := strings.Join(os.Args[1:], "")
-		listutils.AddMovie(newTitle, titlesFile)
+		newTitle := strings.Join(os.Args[2:], " ")
+		listutils.AddMovie(newTitle, file)
 	case "jsonify":
 		fmt.Println("giahson")
 	default:
 		printUsage()
 	}
-
-	// call funcs --> get result
-
-	// write files
 }
