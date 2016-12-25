@@ -5,59 +5,6 @@
 21
 21 grams
 300
-Alps
-American hustle
-Annie hall
-Big eyes
-Birdman or (The Unexpected Virtue of Ignorance)
-Blue Is the Warmest Color
-Blue velvet
-Charlie and the Chocolate Factory
-Crazy, Stupid, Love.
-Days Of Heaven
-Dogtooth
-Dogville
-Elephant
-Enemy
-Eternal Sunshine of the Spotless Mind
-Everyone Says I Love You
-Everything You Always Wanted to Know About Sex * But Were Afraid to Ask
-Extremely Loud & Incredibly Close
-Fantastic Mr. Fox
-Flags of Our Fathers
-Gran Torino
-Her
-I'm not there.
-Inland Empire
-Interstellar
-La vita è bella
-Leaving las vegas
-Letters from Iwo Jima
-Life of brian
-Manderlay
-Manhattan Murder Mystery
-Me and Earl and the Dying Girl
-Melancholia
-Mulholland Drive
-Nymphomaniac: Vol. I
-Nymphomaniac: Vol. II
-O Brother, Where Art Thou?
-Primer
-Punch-Drunk Love
-The Assassination of Jesse James by the Coward Robert Ford
-The Boy in the Striped Pajamas
-The Bridges of Madison County
-The Godfather: Part III
-The Grand Budapest Hotel
-The Kids Are All Right
-The Men Who Stare at Goats
-The hateful eight
-The man from uncle
-The revenant
-The wolf of wall street
-Vicky Cristina Barcelona
-Willy Wonka & the Chocolate Factory
-Young Frankenstein
 a beautiful mind
 a clockwork orange
 a few good men
@@ -65,10 +12,12 @@ a serbian film
 a serious man
 across the universe
 adaptation.
+alps
 amen.
 american beauty
 american gangster
 american history x
+american hustle
 american sniper
 amores perros
 amour
@@ -76,6 +25,7 @@ amélie
 angels & demons
 animal house
 anna
+annie hall
 anomalisa
 another year
 antichrist
@@ -87,13 +37,17 @@ babel
 back to the future
 before sunset
 being john malkovich
+big eyes
 big fish
+birdman or (the unexpected virtue of ignorance)
 birth
 biutiful
 black swan
 blade runner
 blood diamond
+blue is the warmest color
 blue jasmine
+blue velvet
 boogie nights
 borat
 bottle rocket
@@ -117,30 +71,43 @@ catch me if you can
 certified copy
 changeling
 charlie and the chocolate factory
+charlie and the chocolate factory
 children of men
 closer
 coherence
+crazy, stupid, love.
 cube
 dallas buyers club
 dancer in the dark
 dark shadows
+days of heaven
 dead poets society
 diamond flash
 django unchained
+dogtooth
+dogville
 donnie darko
 doubt
 downfall
 ed wood
 edward scissorhands
 el topo
+elephant
+enemy
 enough said
 enter the void
 eraserhead
 et the extra terrestrial
+eternal sunshine of the spotless mind
+everyone says i love you
+everything you always wanted to know about sex * but were afraid to ask
 ex machina
+extremely loud & incredibly close
 eyes wide shut
+fantastic mr. fox
 fargo
 fight club
+flags of our fathers
 flight
 forrest gump
 four rooms
@@ -155,6 +122,7 @@ gone girl
 good night and good luck
 good will hunting
 goodfellas
+gran torino
 gravity
 groundhog day
 hachi a dog's tale
@@ -163,13 +131,17 @@ hancock
 hannibal
 hannibal rising
 hard candy
+her
 hereafter
 holy motors
+i'm not there.
 incendies
 inception
 inglourious basterds
 inherent vice
+inland empire
 inside out
+interstellar
 into the wild
 invictus
 irreversible
@@ -182,8 +154,12 @@ kill bill
 kill bill: vol 2
 killing them softly
 knight of cups
+la vita è bella
+leaving las vegas
 let the right one in
+letters from iwo jima
 life is beautiful
+life of brian
 life of pi
 lincoln
 little miss sunshine
@@ -195,16 +171,20 @@ love actually
 magical girl
 magnolia
 man of steel
+manderlay
+manhattan murder mystery
 manhunter
 martha marcy may marlene
 match point
 matchstick men
+me and earl and the dying girl
 me myself & irene
 meet the fockers
 meet the parents
+melancholia
 memento
 men in black
-men in black II
+men in black ii
 midnight in paris
 milk
 million dollar baby
@@ -213,12 +193,16 @@ moon
 moonrise kingdom
 more things that happened
 mr. nobody
+mulholland drive
 my dinner with andre
 mystic river
 natural born killers
 nebraska
 nightcrawler
 no country for old men
+nymphomaniac: vol. i
+nymphomaniac: vol. ii
+o brother, where art thou?
 ocean's eleven
 ocean's thirteen
 ocean's twelve
@@ -229,21 +213,25 @@ perfume: the story of a murderer
 persona
 pirates of silicon valley
 precious
+primer
 prisoners
 psycho
 pulp fiction
+punch-drunk love
 quantum of solace
 rabbits
 ray
 red dragon
 requiem for a dream
 reservoir dogs
+rogue one a star wars story
+rogue one: a star wars story
 room
 rush
 rushmore
 saving private ryan
 saw
-saw II
+saw ii
 scarface
 schindler's list
 scoop
@@ -270,12 +258,15 @@ take the money and run
 tangerine
 taxi driver
 the artist
+the assassination of jesse james by the coward robert ford
 the aviator
 the babadook
 the beach
 the big lebowski
 the blair witch project
+the boy in the striped pajamas
 the breakfast club
+the bridges of madison county
 the bucket list
 the butterfly effect
 the color purple
@@ -296,24 +287,30 @@ the gift
 the girlfriend experience
 the godfather
 the godfather part ii
+the godfather: part iii
 the graduate
+the grand budapest hotel
 the green mile
 the hangover
+the hateful eight
 the hours
 the hunt
 the hurt locker
 the imitation game
 the impossible
 the intouchables
+the kids are all right
 the king's speech
 the life aquatic with steve zissou
 the lobster
 the machinist
 the man from earth
+the man from uncle
 the martian
 the master
 the matrix
 the matrix reloaded
+the men who stare at goats
 the new world
 the next three days
 the notebook
@@ -321,6 +318,7 @@ the others
 the pianist
 the prestige
 the pursuit of happyness
+the revenant
 the royal tenenbaums
 the science of sleep
 the shawshank redemption
@@ -342,6 +340,7 @@ the usual suspects
 the village
 the virgin suicides
 the white ribbon
+the wolf of wall street
 thelma & louise
 there will be blood
 three colors: blue
@@ -361,13 +360,16 @@ upstream color
 valkyrie
 vanilla sky
 vertigo
+vicky cristina barcelona
 videodrome
 wall-e
 war horse
 warrior
 whiplash
 wild at heart
+willy wonka & the chocolate factory
 wish i was here
 yes man
+young frankenstein
 zero dark thirty
 zodiac

@@ -8,10 +8,11 @@ import (
 	"./listutils"
 )
 
-const titlesFile string = "./test.txt"
-const jsonFile string = "./movies.json"
+const titlesFileName string = "./files/titles.txt"
+const jsonFileName string = "./files/movies.json"
 const usage string = `USAGE:
-  - go run listUtils.go add movie_title`
+  - go run listUtils.go add movie_title
+  - go run listutils.go jsonify`
 
 func printUsage() {
 	fmt.Println(usage)
@@ -23,17 +24,18 @@ func main() {
 	if len(os.Args) < 2 {
 		printUsage()
 	}
-	file, errOpen := os.Open(titlesFile)
-	defer file.Close()
+	titlesFile, errOpen := os.Open(titlesFileName)
+	defer titlesFile.Close()
+	defer fmt.Println("- - - done! - - -")
 	if errOpen != nil {
 		panic(errOpen)
 	}
 	switch os.Args[1] {
 	case "add":
 		newTitle := strings.Join(os.Args[2:], " ")
-		listutils.AddMovie(newTitle, file)
+		listutils.AddMovie(newTitle, titlesFile)
 	case "jsonify":
-		fmt.Println("giahson")
+		listutils.Titles2json(titlesFile, jsonFileName)
 	default:
 		printUsage()
 	}

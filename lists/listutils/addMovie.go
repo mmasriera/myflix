@@ -1,6 +1,6 @@
 /*Package listutils adds a new movie to the list and sorts the list
 TODO
-- [x] working
+- [x] make it work
 - [] test
 - [] benchmark
 */
@@ -15,19 +15,19 @@ import (
 	"strings"
 )
 
-type Movies []string
+type MovieTitles []string
 
 // impl. sort interface
-func (m Movies) Len() int           { return len(m) }
-func (m Movies) Swap(a, b int)      { m[a], m[b] = m[b], m[a] }
-func (m Movies) Less(a, b int) bool { return m[a] < m[b] }
+func (mt MovieTitles) Len() int           { return len(mt) }
+func (mt MovieTitles) Swap(a, b int)      { mt[a], mt[b] = mt[b], mt[a] }
+func (mt MovieTitles) Less(a, b int) bool { return mt[a] < mt[b] }
 
 // AddMovie adds a movie to the list
 func AddMovie(newTitle string, file *os.File) {
-	movies := Movies{newTitle}
+	movies := MovieTitles{newTitle}
 	input := bufio.NewScanner(file)
 	for input.Scan() { // line by line
-		title := input.Text()
+		title := strings.ToLower(input.Text())
 		if title != newTitle {
 			movies = append(movies, title)
 		}
@@ -39,4 +39,5 @@ func AddMovie(newTitle string, file *os.File) {
 	if errWrite != nil {
 		panic(errWrite)
 	}
+	fmt.Println(newTitle + " added")
 }

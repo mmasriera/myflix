@@ -1,11 +1,14 @@
 
 import React from 'react';
 import MovieEntry from '../MovieEntry/MovieEntry.jsx';
+import movies from './movies.json';
 
 export default class List extends React.Component {
 
     constructor() {
         super();
+
+        console.log(movies);
 
         this.state = { movieList : [
             'upstream color',
@@ -13,7 +16,7 @@ export default class List extends React.Component {
             'the darjeeling limited',
             'synecdoche new york'
         ]};
-        
+
         this.select = ( title ) => {
             console.log( title );
         };
