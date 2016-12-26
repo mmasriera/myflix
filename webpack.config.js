@@ -7,7 +7,7 @@ const paths   = {
 
 module.exports = {
     entry : {
-        public : `${ paths.public }/index.jsx`
+        public : `${ paths.public }/components/Main/Main.jsx`
     },
     output : {
         path     : paths.build,

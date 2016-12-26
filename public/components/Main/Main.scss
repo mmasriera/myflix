@@ -1,6 +1,11 @@
 
-@import 'components/List/List.scss';
-@import 'components/MovieInfo/MovieInfo.scss';
+@import '../List/List.scss';
+@import '../MovieInfo/MovieInfo.scss';
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
 #mainContainer {
     background-color: #DDD;

@@ -1,12 +1,15 @@
 
+import './Main.scss';
+
 import React from 'react';
+import {render} from 'react-dom';
 import List from '../List/List.jsx';
 import Details from '../MovieInfo/MovieInfo.jsx';
 
-export default class Main extends React.Component {
+
+class Main extends React.Component {
 
     constructor() {
-
         super();
         this.state = {};
     }
@@ -16,7 +19,6 @@ export default class Main extends React.Component {
     handleChange( event ) {}
 
     render() {
-
         return(
             <div id="mainContainer">
                 <div id="left">
@@ -31,3 +33,5 @@ export default class Main extends React.Component {
         );
     }
 };
+
+render( <Main />, document.getElementById('app') );
