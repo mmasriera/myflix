@@ -26,6 +26,7 @@
     "babel-preset-react": "^6.16.0",
     "css-loader": "^0.23.1",
     "eslint": "^3.12.2",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "node-sass": "^3.13.1",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",

@@ -1,0 +1,30 @@
+#list {
+  background-color: cyan; }
+  #list ul {
+    border: 2px dashed purple;
+    padding: 10px;
+    list-style: none; }
+    #list ul li {
+      border: 1px solid white;
+      text-align: right; }
+
+#movieInfo {
+  background-color: green;
+  width: 40%;
+  top: 10%;
+  left: 50%;
+  position: fixed; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+#mainContainer {
+  background-color: #DDD; }
+  #mainContainer #left {
+    background-color: #F65;
+    width: 50%;
+    height: 100%;
+    overflow-y: scroll; }
+    #mainContainer #left #myflixInfo {
+      background-color: white; }
