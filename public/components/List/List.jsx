@@ -8,14 +8,7 @@ export default class List extends React.Component {
     constructor() {
         super();
 
-        console.log(movies);
-
-        this.state = { movieList : [
-            'upstream color',
-            'inland empire',
-            'the darjeeling limited',
-            'synecdoche new york'
-        ]};
+        this.state = { movieList : movies.map( (m) => m.Title )};
 
         this.select = ( title ) => {
             console.log( title );

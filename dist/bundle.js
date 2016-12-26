@@ -9468,9 +9468,9 @@ var List = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (List.__proto__ || Object.getPrototypeOf(List)).call(this));
 
-        console.log(_movies2.default);
-
-        _this.state = { movieList: ['upstream color', 'inland empire', 'the darjeeling limited', 'synecdoche new york'] };
+        _this.state = { movieList: _movies2.default.map(function (m) {
+                return m.Title;
+            }) };
 
         _this.select = function (title) {
             console.log(title);
