@@ -8,17 +8,17 @@ export default class List extends React.Component {
     constructor() {
         super();
 
-        this.state = { movieList : movies.map( (m) => m.Title )};
+        this.state = { movieList : movies };
 
         this.select = ( title ) => {
             console.log( title );
         };
     }
 
-     render() {
-        let movies = this.state.movieList.map( ( title, idx ) => { 
-            const props = { title, select: this.select };
-            return <MovieEntry key={ `mv-${ idx }` } { ...props } />;
+    render() {
+        let movies = this.state.movieList.map( ( movie, idx ) => { 
+            movie.select = this.select;
+            return <MovieEntry key={ `mv-${ idx }` } { ...movie } />;
         });
 
         return(

@@ -15,7 +15,8 @@ export default class MovieEntry extends React.Component {
     render() {
         return(
             <li onClick={ this.handleClick }>
-                { this.props.title }
+                <p>{ this.props.Title }</p>
+                <p>{ `${ this.props.Director } (${ this.props.Year })` }</p>
             </li>
         );
     }

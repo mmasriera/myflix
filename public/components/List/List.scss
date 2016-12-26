@@ -1,16 +1,16 @@
 
 #list {
-
-    background-color: cyan;
+    height: 80%;
+    overflow-y: scroll;
 
     ul {
-        border: 2px dashed purple;
-        padding: 10px;
         list-style: none;
+        padding: 0;
 
         li {
             border : 1px solid white;
-            text-align: right;
+            padding: 10px;
+            text-align: center;
         }
     }
 }

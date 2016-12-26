@@ -1,6 +1,6 @@
 
 @import '../List/List.scss';
-@import '../MovieInfo/MovieInfo.scss';
+//@import '../MovieInfo/MovieInfo.scss';
 
 html, body {
     margin: 0;
@@ -8,16 +8,12 @@ html, body {
 }
 
 #mainContainer {
+    width: 50%;
+    margin-left: 25%;
+    height: 100%;
     background-color: #DDD;
 
-    #left {
-        background-color : #F65;
-        width : 50%;
-        height: 100%;
-        overflow-y: scroll;
-
-        #myflixInfo {
-            background-color: white;
-        }
+    #header {
+        height: 15%;
     }
 }
